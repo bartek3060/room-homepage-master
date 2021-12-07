@@ -1,0 +1,62 @@
+@import './variable.scss';
+@import './header.scss';
+@import './navigation.scss';
+@import './main-section.scss';
+@import './aside.scss';
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@keyframes openmenuAnimation {
+    0% {
+        height: 0vh;
+    }
+
+    100% {
+        height: 15vh;
+    }
+}
+
+@keyframes closemenuAnimation {
+    0% {
+        height: 15vh;
+    }
+
+    100% {
+        height: 0vh;
+    }
+}
+
+body {
+    font-size: 12px;
+
+    width: 100vw;
+    overflow-x: hidden;
+
+    font-family: 'Spartan', sans-serif;
+}
+
+
+
+@media (min-width:700px) {
+    body {
+        font-size: 22px;
+    }
+
+}
+
+@media (min-width:1024px) {
+
+    body {
+        font-size: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 70vh 30vh;
+    }
+
+}

@@ -1,0 +1,177 @@
+@import './variable.scss';
+
+main {
+    .slider {
+        .imgSlider {
+            background-image: url('/images/desktop-image-hero-1.jpg');
+            height: 40vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            transition: 0.5s;
+
+            .buttons {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                display: flex;
+
+                button {
+                    background-color: black;
+                    border: none;
+                    padding: 10px 15px;
+                }
+            }
+        }
+    }
+
+    .paragraphs {
+        display: none;
+
+        h1 {
+            margin: 10% 5% 6% 5%;
+            font-size: 20px;
+        }
+
+        p {
+            margin: 0 5% 5% 5%;
+            color: map-get($colors, very_dark_gray);
+            font-weight: 300;
+        }
+
+        a {
+            text-decoration: none;
+            display: flex;
+            margin: 12% 10% 15% 10%;
+        }
+
+        .shop-now {
+            letter-spacing: 5px;
+            font-size: 14px;
+            font-weight: 500;
+            margin-right: 10%;
+        }
+    }
+
+    .paragraphs.active {
+        display: block;
+
+    }
+}
+
+@media (min-width:700px) {
+    main {
+        .slider {
+            .imgSlider {
+
+                .buttons {
+                    button {
+                        padding: 20px 25px;
+                    }
+                }
+            }
+        }
+
+        .paragraphs {
+            h1 {
+                font-size: 40px;
+            }
+
+            .shop-now {
+                letter-spacing: 5px;
+                font-size: 25px;
+            }
+        }
+    }
+}
+
+@media (min-width:1024px) {
+    main {
+        grid-column: 1;
+        grid-row: 1;
+        height: 70vh;
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 1fr;
+
+        .slider {
+
+            grid-row: 1;
+            grid-column: 1;
+            width: 60vw;
+
+
+
+
+
+            .imgSlider {
+                height: 70vh;
+            }
+
+            .imgSlider {
+                .buttons {
+
+                    bottom: 0;
+                    // right: -7.5vw;
+                    right: 0;
+                    transform: translate(100%, 0);
+
+
+                }
+
+                button {
+                    cursor: pointer;
+                }
+
+                button:hover {
+                    background-color: map-get($colors, very_dark_gray);
+                }
+            }
+
+
+
+        }
+
+        .paragraphs {
+            grid-row: 1;
+            grid-column: 2;
+            width: 100%;
+
+            h1 {
+                margin: 10% 15% 6% 15%;
+                font-size: 30px;
+            }
+
+            p {
+                margin: 0 15% 5% 15%;
+                font-size: 14px;
+            }
+
+            a {
+                margin: 12% 15% 15% 15%;
+
+            }
+
+            .shop-now {
+                letter-spacing: 7px;
+                font-size: 16px;
+                font-weight: 700;
+                margin-right: 10%;
+            }
+        }
+    }
+}
+
+@media (min-width:1200px) {
+    main {
+        .paragraphs {
+            h1 {
+                font-size: 34px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+}

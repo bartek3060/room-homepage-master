@@ -1,0 +1,20 @@
+{
+  "name": "room-homepage-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Room homepage coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "build-prod": "webpack --mode production"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "web-pack": "^1.0.0",
+    "webpack": "^5.64.4"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.1"
+  }
+}

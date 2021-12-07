@@ -1,0 +1,142 @@
+main .slider .imgSlider {
+  background-image: url("/images/desktop-image-hero-1.jpg");
+  height: 40vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+main .slider .imgSlider .buttons {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .slider .imgSlider .buttons button {
+  background-color: black;
+  border: none;
+  padding: 10px 15px;
+}
+
+main .paragraphs {
+  display: none;
+}
+
+main .paragraphs h1 {
+  margin: 10% 5% 6% 5%;
+  font-size: 20px;
+}
+
+main .paragraphs p {
+  margin: 0 5% 5% 5%;
+  color: #454545;
+  font-weight: 300;
+}
+
+main .paragraphs a {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 12% 10% 15% 10%;
+}
+
+main .paragraphs .shop-now {
+  letter-spacing: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-right: 10%;
+}
+
+main .paragraphs.active {
+  display: block;
+}
+
+@media (min-width: 700px) {
+  main .slider .imgSlider .buttons button {
+    padding: 20px 25px;
+  }
+  main .paragraphs h1 {
+    font-size: 40px;
+  }
+  main .paragraphs .shop-now {
+    letter-spacing: 5px;
+    font-size: 25px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    height: 70vh;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 3fr 2fr;
+        grid-template-columns: 3fr 2fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+  }
+  main .slider {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 1;
+    grid-column: 1;
+    width: 60vw;
+  }
+  main .slider .imgSlider {
+    height: 70vh;
+  }
+  main .slider .imgSlider .buttons {
+    bottom: 0;
+    right: 0;
+    -webkit-transform: translate(100%, 0);
+            transform: translate(100%, 0);
+  }
+  main .slider .imgSlider button {
+    cursor: pointer;
+  }
+  main .slider .imgSlider button:hover {
+    background-color: #454545;
+  }
+  main .paragraphs {
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    width: 100%;
+  }
+  main .paragraphs h1 {
+    margin: 10% 15% 6% 15%;
+    font-size: 30px;
+  }
+  main .paragraphs p {
+    margin: 0 15% 5% 15%;
+    font-size: 14px;
+  }
+  main .paragraphs a {
+    margin: 12% 15% 15% 15%;
+  }
+  main .paragraphs .shop-now {
+    letter-spacing: 7px;
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 10%;
+  }
+}
+
+@media (min-width: 1200px) {
+  main .paragraphs h1 {
+    font-size: 34px;
+  }
+  main .paragraphs p {
+    font-size: 16px;
+  }
+}
